@@ -11,7 +11,9 @@ import '@aws-amplify/ui-react/styles.css';
 ReactDOM.createRoot(document.getElementById("root")!).render(
     
   <React.StrictMode>
-    <Authenticator>
+    <Authenticator
+      socialProviders={['google']}
+    >
       <App />
     </Authenticator>
   </React.StrictMode>
